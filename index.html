@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Matching #1</title>
+    <script src="app.js"></script>
+</head>
+<body>
+    <p>
+        Let's build a matchmaking system that helps discover jobs for developers based on a number of factors.<br>
+<br>
+        One of the simplest, yet most important factors is compensation. As developers we know how much money <br>
+        we need to support our lifestyle, so we generally have a rough idea of the minimum salary we would be <br>
+        satisfied with.<br>
+<br>
+        Let's give this a try. We'll create a function match which takes a candidate and a job, which will return <br>
+        a boolean indicating whether the job is a valid match for the candidate.<br>
+<br>
+        A candidate will have a minimum salary, so it will look like this:<br>
+<br>
+        let candidate = {<br>
+        minSalary: 120000<br>
+        }<br>
+        A job will have a maximum salary, so it will look like this:<br>
+<br>
+        let job = {<br>
+        maxSalary: 140000<br>
+        }<br>
+        If either the candidate's minimum salary or the job's maximum salary is not present, throw an error.<br>
+<br>
+        For a valid match, the candidate's minimum salary must be less than or equal to the job's maximum salary. <br>
+        However, let's also include 10% wiggle room (deducted from the candidate's minimum salary) in case the <br>
+        candidate is a rockstar who enjoys programming on Codewars in their spare time. The company offering the <br>
+        job may be able to work something out.<br>
+    </p>
+    
+</body>
+</html>
